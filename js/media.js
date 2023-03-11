@@ -54,11 +54,6 @@ function calcularMedia() {
     };
 };
 
-function limparCampo() {
-  document.getElementById("nota1").value = "";
-  document.getElementById("nota2").value = "";
-  document.getElementById("nota3").value = "";
-  document.getElementById("nota4").value = "";
-};
+
 
 
