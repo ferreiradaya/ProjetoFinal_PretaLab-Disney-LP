@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Módulo 1: Lógica de Programação</h1>
-    <h1>🐛</h1>
+    <h1>👩🏽‍💻</h1>
 
     <main>
       <p>
@@ -22,6 +22,7 @@
 
       <div id="content">
         <section id="projeto1">
+          <form>
           <h2>Calculadora Básica</h2>
 
           <input class="inputCalc" id="numero1Soma" type="number" required />
@@ -36,20 +37,24 @@
 
           <input class="inputCalc" id="numero1Mult" type="number" required />
           <input class="inputCalc" id="numero2Mult" type="number" required />
-          <button class="buttonCalc" onclick="multiplicar()">
-            MULTIPLICAR
-          </button>
+          <button class="buttonCalc" onclick="multiplicar()">MULTIPLICAR</button>
           <p class="resultado">Resultado: <b id="resultadoMult"></b></p>
 
           <input class="inputCalc" id="numero1Div" type="number" required />
           <input class="inputCalc" id="numero2Div" type="number" required />
           <button class="buttonCalc" onclick="dividir()">DIVIDIR</button>
           <p class="resultado">Resultado: <b id="resultadoDiv"></b></p>
+
+          <input class="inputCalc" id="numero1exp" type="number" required />
+          <input class="inputCalc" id="numero2exp" type="number" required />
+          <button class="buttonCalc" onclick="exponencial()">EXPONENCIAL</button>
+          <p class="resultado">Resultado: <b id="resultadoExp"></b></p>
+
         </section>
 
         <section id="projeto2">
-          <h2>Calculadora de Médias</h2>
-
+          <h2>Calculadora de Médias de Notas</h2>
+        
           <div id="contentCalcMedias">
             <div id="notas">
               <div class="nota">
@@ -73,16 +78,27 @@
               </div>
             </div>
 
+            <br>
+
             <button id="btnSituacao" onclick="calcularMedia()">
               Qual a situação da estudante?
             </button>
 
+          
             <p id="situacaoAluno" />
+
+  
           </div>
         </section>
       </div>
+
+            <input type="reset" value="Limpar campos" /> 
+            </form>   
+
     </main>
 
+    
+       
     <script type="text/javascript" src="/js/calculadora.js"></script>
     <script type="text/javascript" src="/js/media.js"></script>
   </body>

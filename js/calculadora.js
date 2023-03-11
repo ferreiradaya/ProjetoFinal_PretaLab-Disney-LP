@@ -4,9 +4,9 @@ function somar() {
   // evite mexer no código acima!
 
   const resultado = numero1 + numero2;
+  console.log(resultado);
 
-  /* use as constantes numero 1 e numero 2 e realize a soma entre elas.
-  Em seguida, ao invés de mostrar o numero 10, mostre o resultado da operação */
+  
   document.getElementById("resultadoSoma").innerHTML = resultado;
 }
 
@@ -17,8 +17,7 @@ function subtrair() {
 
   const resultado = numero1 - numero2;
 
-  /* use as constantes numero 1 e numero 2 e realize a soma entre elas.
-   Em seguida, ao invés de mostrar o numero 9, mostre o resultado da operação */
+  
   document.getElementById("resultadoSub").innerHTML = resultado;
 }
 
@@ -29,8 +28,6 @@ function multiplicar() {
 
   const resultado = numero1 * numero2;
 
-  /* use as constantes numero 1 e numero 2 e realize a soma entre elas.
-   Em seguida, ao invés de mostrar o numero 5, mostre o resultado da operação */
   document.getElementById("resultadoMult").innerHTML = resultado;
 }
 
@@ -41,7 +38,16 @@ function dividir() {
 
   const resultado = numero1 / numero2;
 
-  /* use as constantes numero 1 e numero 2 e realize a soma entre elas.
-   Em seguida, ao invés de mostrar o numero -89, mostre o resultado da operação */
   document.getElementById("resultadoDiv").innerHTML = resultado;
+}
+
+function exponencial() {
+  const numero1 = parseFloat(document.getElementById("numero1exp").value);
+  const numero2 = parseFloat(document.getElementById("numero2exp").value);
+  // evite mexer no código acima!
+
+  const resultado = numero1 ** numero2;
+
+  
+  document.getElementById("resultadoExp").innerHTML = resultado;
 }
